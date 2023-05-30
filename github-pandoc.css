@@ -12,6 +12,9 @@ body {
   overflow-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
+  h1 {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 600px) {
   body {
@@ -19,7 +22,7 @@ body {
     padding: 12px;
   }
   h1 {
-    font-size: 1.0em;
+    font-size: 1.8em;
   }
 }
 @media print {
