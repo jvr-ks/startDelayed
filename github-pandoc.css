@@ -55,7 +55,7 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.4em;
+  margin-top: 0.4em;
 }
 h5, h6 {
   font-size: 1em;
@@ -164,4 +164,5 @@ table tr td,.haroopad table tr th{
 table tr:nth-child(2n){
     background-color:#f2f2f2
 }
+
 
