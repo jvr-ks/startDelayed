@@ -1,0 +1,7 @@
+startdelayed32.exe
+stdshortcuts.txt,no
+stddirectoriesDEMO.txt
+Licenses.txt
+shorthelp.html
+startdelayedEdit.exe
+startdelayedStopall.exe
