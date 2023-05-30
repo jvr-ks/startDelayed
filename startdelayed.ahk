@@ -48,7 +48,7 @@ wrkDir := A_ScriptDir . "\"
 appName := "Startdelayed"
 appnameLower := "startdelayed"
 extension := ".exe"
-appVersion := "0.009"
+appVersion := "0.010"
 
 bit := (A_PtrSize=8 ? "64" : "32")
 
@@ -66,13 +66,16 @@ currentNotepadId := ""
 
 configFileOld := appnameLower . ".ini"
 configFile := appnameLower . "_" . A_ComputerName . ".ini"
-localConfigDir :=  A_AppData . "\" . appnameLower . "\"
-localConfigFile := localConfigDir . configFile
+localAppDir :=  A_AppData . "\" . appnameLower . "\"
+localConfigFile := localAppDir . configFile
 
 directoriesFile := "stddirectories_" . A_ComputerName . ".txt"
-localDirectoriesFile := localConfigDir . directoriesFile
+localDirectoriesFile := localAppDir . directoriesFile
 
-syncAppDataRead2()
+shortcutsFile  := "stdshortcuts_" . A_ComputerName . ".txt"
+localShortcutsFile := localAppDir . shortcutsFile
+
+syncAppDataRead3()
 
 if (FileExist(configFileOld)){
   msgbox, The old Configuration-file "%configFileOld%" was found, but is ignored!`nUsing "%configFile%" as the Configuration-file now!
@@ -112,7 +115,6 @@ GroupAdd,anyshell,ahk_class ConsoleWindowClass
 GroupAdd,anyshell,ahk_class mintty
 
 shortcutsArr := {}
-shortcutsFile  := "stdshortcuts.txt"
 
 showActiveTitle := true
 
@@ -154,9 +156,9 @@ if (A_Args.Length() == 0){
 
 return
 
-;------------------------------ syncAppDataRead2 ------------------------------
-syncAppDataRead2(){
-  global localConfigDir, configFile, localConfigFile, directoriesFile, localDirectoriesFile
+;------------------------------ syncAppDataRead3 ------------------------------
+syncAppDataRead3(){
+  global localAppDir, configFile, localConfigFile, directoriesFile, localDirectoriesFile, shortcutsFile, localShortcutsFile
   
   if (!(FileExist(configFile))){
     if ((FileExist(localConfigFile))){
@@ -176,32 +178,48 @@ syncAppDataRead2(){
       msgbox, File "%directoriesFile%" not found`, using "stddirectoriesDEMO.txt"
     }
   }
+  
+  if (!(FileExist(shortcutsFile))){
+    if ((FileExist(localShortcutsFile))){
+      FileCopy, %localShortcutsFile%, %shortcutsFile%, 1
+    } else {
+      FileCopy, stdshortcutsDEMO.txt, %shortcutsFile%, 1
+      msgbox, File "%shortcutsFile%" not found`, using "stdshortcutsDEMO.txt"
+    }
+  }
 
   return 
 }
-;----------------------------- syncAppDataWrite2 -----------------------------
-syncAppDataWrite2(){
-  global localConfigDir, configFile, directoriesFile
+;----------------------------- syncAppDataWrite3 -----------------------------
+syncAppDataWrite3(){
+  global localAppDir, configFile, directoriesFile, shortcutsFile
   
-  if (!(FileExist(localConfigDir))){
+  if (!(FileExist(localAppDir))){
     try {
-      FileCreateDir, %localConfigDir%
+      FileCreateDir, %localAppDir%
     } catch e {
-      msgbox, Could not create directory: %localConfigDir%
+      msgbox, Could not create directory: %localAppDir%
     }
   }
   
   ; save configFile
   if (FileExist(configFile)){
-    if ((FileExist(localConfigDir))){
-      FileCopy, %configFile%, %localConfigDir%*.*, 1
+    if ((FileExist(localAppDir))){
+      FileCopy, %configFile%, %localAppDir%*.*, 1
     }
   }
   
   ; save directoriesFile
   if (FileExist(directoriesFile)){
-    if ((FileExist(localConfigDir))){
-      FileCopy, %directoriesFile%, %localConfigDir%*.*, 1
+    if ((FileExist(localAppDir))){
+      FileCopy, %directoriesFile%, %localAppDir%*.*, 1
+    }
+  }
+  
+  ; save shortcutsFile
+  if (FileExist(shortcutsFile)){
+    if ((FileExist(localAppDir))){
+      FileCopy, %shortcutsFile%, %localAppDir%*.*, 1
     }
   }
   
@@ -1445,7 +1463,7 @@ exit() {
   global hMain, app
   
   saveGuiData()
-  syncAppDataWrite2()
+  syncAppDataWrite3()
   
   ExitApp
 }

@@ -9,6 +9,7 @@ Usable, but parts are underconstruction.
   
 Version (>=)| Change
 ------------ | -------------
+0.010 | stdshortcuts.txt -> stdshortcuts_<ComputerName>.txt
 0.001 | Start of dev. 2023/05/14
 
  
@@ -82,12 +83,13 @@ Environment-variables (like "%SystemRoot%") are **NOT** usable insíde the Start
    
 #### Configuration  
 Configuration is done by a few files,  
-file encoding is: **UTF-8 (no BOM)** besides the \[Configuration-file] (UTF-16).  
-Use [Notepad\+\+](https://notepad-plus-plus.org/), Atom, Scite or any other editor to edit the files:   
+file encoding is: **UTF-8 (no BOM)** besides the \[Configuration-file] (UTF-16):    
   
 \[Directories-file] **"stddirectories_<ComputerName>.txt"**,  
 \[Configuration-file] **"startdelayed_<ComputerName>.ini"** 
-\[Shortcuts-file] **"stdshortcuts.txt"**,   
+\[Shortcuts-file] **"stdshortcuts_<ComputerName>.txt"**  
+Use [Notepad\+\+](https://notepad-plus-plus.org/), Atom, Scite or any other editor to edit the files,  
+or use the builtin editor (Menu -> Setup -> Edit ...), but it is very "rudimentary"!  
   
 #### Configuration-files backup / autorestore
 If the directory "C:\Users\<UserName>\AppData\Roaming\startdelayed\" is usable,
@@ -97,7 +99,7 @@ an attempt is made to restore the file from the backup directory.
 Otherwise a new Configuration-file is created, containing default-values. 
 
 
-#### \[Directories-file] **"stddirectories.txt"**:  
+#### \[Directories-file] **"stddirectories_<ComputerName>.txt"**:  
 contains on each line separated by a comma:  
   
 Name | Dir | StartCmd | StopCmd | Modifier
@@ -108,7 +110,7 @@ The name of the entry | the working directory | Command to start the app | Comma
 The default \[Configuration-file] filename is "startdelayed_COMPUTERNAME.ini".    
 The file is created with default values.  
   
-#### \[Shortcuts-file] **"stdshortcuts.txt"**:   
+#### \[Shortcuts-file] **"stdshortcuts_<ComputerName>.txt"**:   
 The format of shortcuts is: \[shortcut-key].  
 Shortcuts can be used to shorten long directory-names inside the \[Directories-file]!  
 The \[Shortcuts-file] can contain an unlimited number of \[shortcut-key], \[value] definition pairs.  
@@ -184,10 +186,10 @@ Copyright (c) 2020 J. v. Roos
 
 <a name="virusscan"></a>
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, startdelayed.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1685449974
+[Virusscan at Virustotal, startdelayed.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1685471525
 )  
-[Virusscan at Virustotal, startdelayed32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1685449974
+[Virusscan at Virustotal, startdelayed32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1685471526
 )  
-[Virusscan at Virustotal, startdelayedA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1685449975
+[Virusscan at Virustotal, startdelayedA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1685471526
 )  
 Use [CTRL] + Click to open in a new window! 

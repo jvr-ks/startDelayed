@@ -2,9 +2,9 @@
 
 copy /Y "startdelayed32.exe" "startdelayed32.exe.default"
 
-copy /Y "stdshortcuts.txt" "stdshortcuts.txt.default"
-
 copy /Y "stddirectoriesDEMO.txt" "stddirectoriesDEMO.txt.default"
+
+copy /Y "stdshortcutsDEMO.txt" "stdshortcutsDEMO.txt.default"
 
 copy /Y "Licenses.txt" "Licenses.txt.default"
 

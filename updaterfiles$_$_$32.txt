@@ -1,6 +1,6 @@
 startdelayed32.exe
-stdshortcuts.txt,no
 stddirectoriesDEMO.txt
+stdshortcutsDEMO.txt
 Licenses.txt
 shorthelp.html
 startdelayedEdit.exe

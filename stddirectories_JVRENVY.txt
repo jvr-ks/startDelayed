@@ -10,6 +10,5 @@ Autostart folder user,,shell:startup,, inactive
 Dir c:\,c:\,dir,, comspec inactive
 TEST WSL,[_ahk]\aottext,ls -l,, wsl inactive,30000
 TEST WSL ADMIN,[_ahk]\aottext,ls -l,, wsladmin inactive,30000
-
-
+TEST Dir,[adminAutostart],dir,, comspec inactive
 
