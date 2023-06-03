@@ -43,6 +43,10 @@ apps at Windows boot-time.</strong></p>
 </thead>
 <tbody>
 <tr class="odd">
+<td>0.010</td>
+<td>stdshortcuts.txt -&gt; stdshortcuts_<ComputerName>.txt</td>
+</tr>
+<tr class="even">
 <td>0.001</td>
 <td>Start of dev. 2023/05/14</td>
 </tr>
@@ -128,13 +132,16 @@ usable insíde the Start/Stop-Cmd!</p>
 <h4 id="configuration">Configuration</h4>
 <p>Configuration is done by a few files,<br />
 file encoding is: <strong>UTF-8 (no BOM)</strong> besides the
-[Configuration-file] (UTF-16).<br />
-Use <a href="https://notepad-plus-plus.org/">Notepad++</a>, Atom, Scite
-or any other editor to edit the files:</p>
+[Configuration-file] (UTF-16):</p>
 <p>[Directories-file]
 <strong>&quot;stddirectories_<ComputerName>.txt&quot;</strong>,<br />
 [Configuration-file] <strong>&quot;startdelayed_<ComputerName>.ini&quot;</strong>
-[Shortcuts-file] <strong>&quot;stdshortcuts.txt&quot;</strong>,</p>
+[Shortcuts-file]
+<strong>&quot;stdshortcuts_<ComputerName>.txt&quot;</strong><br />
+Use <a href="https://notepad-plus-plus.org/">Notepad++</a>, Atom, Scite
+or any other editor to edit the files,<br />
+or use the builtin editor (Menu -&gt; Setup -&gt; Edit ...), but it is
+very &quot;rudimentary&quot;!</p>
 <h4 id="configuration-files-backup--autorestore">Configuration-files
 backup / autorestore</h4>
 <p>If the directory
@@ -145,8 +152,8 @@ If the Configuration-file is missing,<br />
 an attempt is made to restore the file from the backup directory.<br />
 Otherwise a new Configuration-file is created, containing
 default-values.</p>
-<h4 id="directories-file-stddirectoriestxt">[Directories-file]
-<strong>&quot;stddirectories.txt&quot;</strong>:</h4>
+<h4 id="directories-file-stddirectories_txt">[Directories-file]
+<strong>&quot;stddirectories_<ComputerName>.txt&quot;</strong>:</h4>
 <p>contains on each line separated by a comma:</p>
 <p>Name | Dir | StartCmd | StopCmd | Modifier ------------ |
 ------------- | ------------- | -------------<br />
@@ -156,8 +163,8 @@ The name of the entry | the working directory | Command to start the app
 <p>The default [Configuration-file] filename is
 &quot;startdelayed_COMPUTERNAME.ini&quot;.<br />
 The file is created with default values.</p>
-<h4 id="shortcuts-file-stdshortcutstxt">[Shortcuts-file]
-<strong>&quot;stdshortcuts.txt&quot;</strong>:</h4>
+<h4 id="shortcuts-file-stdshortcuts_txt">[Shortcuts-file]
+<strong>&quot;stdshortcuts_<ComputerName>.txt&quot;</strong>:</h4>
 <p>The format of shortcuts is: [shortcut-key].<br />
 Shortcuts can be used to shorten long directory-names inside the
 [Directories-file]!<br />
@@ -232,11 +239,11 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Copyright (c) 2020 J. v.
 Roos</p>
 <p><a name="virusscan"></a></p>
 <h5 id="virusscan-at-virustotal">Virusscan at Virustotal</h5>
-<p><a href="https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1685449974">Virusscan
+<p><a href="https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1685471525">Virusscan
 at Virustotal, startdelayed.exe 64bit-exe, Check here</a><br />
-<a href="https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1685449974">Virusscan
+<a href="https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1685471526">Virusscan
 at Virustotal, startdelayed32.exe 32bit-exe, Check here</a><br />
-<a href="https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1685449975">Virusscan
+<a href="https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1685471526">Virusscan
 at Virustotal, startdelayedA32.exe 32bit-exe ANSI, Check here</a><br />
 Use [CTRL] + Click to open in a new window!</p>
 </body>
