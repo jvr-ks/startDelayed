@@ -57,7 +57,7 @@ if (!A_IsUnicode)
 
 bitName := (bit="64" ? "" : bit)
 
-app := appName . " " . appVersion . " " . bit . "-bit"
+app := appName . " " . appVersion . " (" . bit . " bit)"
 
 
 
