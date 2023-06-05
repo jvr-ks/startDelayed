@@ -60,11 +60,9 @@ bitName := (bit="64" ? "" : bit)
 app := appName . " " . appVersion . " (" . bit . " bit)"
 
 
-
 sessionName := ""
 currentNotepadId := ""
 
-configFileOld := appnameLower . ".ini"
 configFile := appnameLower . "_" . A_ComputerName . ".ini"
 localAppDir :=  A_AppData . "\" . appnameLower . "\"
 localConfigFile := localAppDir . configFile
@@ -76,10 +74,6 @@ shortcutsFile  := "stdshortcuts_" . A_ComputerName . ".txt"
 localShortcutsFile := localAppDir . shortcutsFile
 
 syncAppDataRead3()
-
-if (FileExist(configFileOld)){
-  msgbox, The old Configuration-file "%configFileOld%" was found, but is ignored!`nUsing "%configFile%" as the Configuration-file now!
-}
 
 
 dpiScaleDefault := 96
@@ -175,7 +169,7 @@ syncAppDataRead3(){
     } else {
       ; use "stddirectoriesDEMO.txt"
       FileCopy, stddirectoriesDEMO.txt, %directoriesFile%, 1
-      msgbox, File "%directoriesFile%" not found`, using "stddirectoriesDEMO.txt"
+      msgbox, File "%directoriesFile%" not found`, using content of "stddirectoriesDEMO.txt"
     }
   }
   
@@ -184,7 +178,7 @@ syncAppDataRead3(){
       FileCopy, %localShortcutsFile%, %shortcutsFile%, 1
     } else {
       FileCopy, stdshortcutsDEMO.txt, %shortcutsFile%, 1
-      msgbox, File "%shortcutsFile%" not found`, using "stdshortcutsDEMO.txt"
+      msgbox, File "%shortcutsFile%" not found`, using content of "stdshortcutsDEMO.txt"
     }
   }
 
