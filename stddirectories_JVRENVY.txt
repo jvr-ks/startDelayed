@@ -1,4 +1,4 @@
-﻿*keyremapper,[_ahk]\simpletoolsIntern,keyremapper.exe,keyremapper.exe remove,,500
+﻿keyremapper,[_ahk]\simpletoolsIntern,keyremapper.exe,keyremapper.exe remove,,500
 sbt_console_select,[_ahk]\sbt_console_select,sbt_console_select.exe hidewindow,sbt_console_select.exe remove,,3000
 clipboardresize,[_ahk]\clipboardresize,clipboardresize.exe,clipboardresize.exe remove,,3000
 cmdlinedev,[_ahk]\cmdlinedev,cmdlinedev.exe,cmdlinedev.exe remove,,3000

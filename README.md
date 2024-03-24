@@ -176,10 +176,10 @@ Copyright (c) 2020 J. v. Roos
   
 <a name="virusscan"></a>  
 ##### Virusscan at Virustotal 
-[Virusscan at Virustotal, startdelayed.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1711291567
+[Virusscan at Virustotal, startdelayed.exe 64bit-exe, Check here](https://www.virustotal.com/gui/url/5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5/detection/u-5a1af220c848260ad3cc36fa7a757b7faff1ef9c67f53cee3c60aa944d605ac5-1711293124
 )  
-[Virusscan at Virustotal, startdelayed32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1711291568
+[Virusscan at Virustotal, startdelayed32.exe 32bit-exe, Check here](https://www.virustotal.com/gui/url/b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f/detection/u-b9b964d88776335fd82abd5bed315279efde34efa0866fb29b58fa91f607037f-1711293126
 )  
-[Virusscan at Virustotal, startdelayedA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1711291569
+[Virusscan at Virustotal, startdelayedA32.exe 32bit-exe ANSI, Check here](https://www.virustotal.com/gui/url/ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70/detection/u-ebdeb88c41ba149017b179335cb08624ac98dc698af41f6fcb05dc58fe9d1d70-1711293127
 )  
 Use [CTRL] + Click to open in a new window! 

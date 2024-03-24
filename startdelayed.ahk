@@ -1338,31 +1338,21 @@ editTextFile(){
   hideWindow()
 
   if (FileExist(editTextFileFilename)){
-    theFile := FileOpen(editTextFileFilename,"r")
+    FileRead, editTextFileContent, %editTextFileFilename%
+    borderX := 10
+    borderY := 50
     
-    if !IsObject(theFile) {
-        msgbox, Error, can't open "%editTextFileFilename%" for reading, exiting to prevent a data loss!
-        exitApp
-    } else {
-      data := theFile.Read()
-      theFile.Close()
-      editTextFileContent := data
-
-      borderX := 10
-      borderY := 50
-      
-      h := clientHeight - borderY
-      w := clientWidth - borderX
-      
-      gui, editTextFile:new, +resize +AlwaysOnTop,Edit (autosave on close): %theFile%
-      gui, editTextFile:Font, s9,Segoe UI
-      gui, editTextFile:Add, edit, x0 y0 w0 h0
-      gui, editTextFile:add, edit, h%h% w%w% VeditTextFileContent,%data%
-      
-      gui, editTextFile:show,center autosize
-    } 
+    h := clientHeight - borderY
+    w := clientWidth - borderX
+    
+    gui, editTextFile:new, +resize +AlwaysOnTop,Edit (autosave on close): %editTextFileFilename%
+    gui, editTextFile:Font, s9,Segoe UI
+    gui, editTextFile:Add, edit, x0 y0 w0 h0
+    gui, editTextFile:add, edit, h%h% w%w% VeditTextFileContent,%editTextFileContent%
+    
+    gui, editTextFile:show, center autosize
   } else {
-    msgbox, Error, file not found: %theFile% !
+    msgbox, Error, file not found: %editTextFileFilename% !
   }
 
   return
@@ -1371,7 +1361,7 @@ editTextFile(){
 editTextFileGuiClose(){
   global appname, editTextFileFilename, editTextFileContent
   
-  gui,editTextFile:submit,nohide
+  gui, editTextFile:submit, nohide
   
   if (FileExist(editTextFileFilename)){
     FileDelete, %editTextFileFilename%
