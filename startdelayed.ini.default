@@ -1,0 +1,23 @@
+[hotkeys]
+menuhotkey="!c"
+exithotkey="+!c"
+
+[timing]
+hintTimeShort=1500
+hintTimeMedium=2000
+hintTime=3000
+hintTimeLong=20000
+
+[config]
+font="Segoe UI"
+fontsize=9
+
+[external]
+notepadppPath="C:\Program Files\Notepad++\notepad++.exe"
+
+[gui]
+dpiScale=96
+windowPosX=0
+windowPosY=0
+clientWidth=938
+clientHeight=390
