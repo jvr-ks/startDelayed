@@ -1,0 +1,22 @@
+﻿keyremapper,[_ahk]\simpletoolsIntern,keyremapper.exe,keyremapper.exe remove,inactive,500
+sbt_console_select,[_ahk]\sbt_console_select,sbt_console_select.exe hidewindow,sbt_console_select.exe remove,,3000
+clipboardresize,[_ahk]\clipboardresize,clipboardresize.exe,clipboardresize.exe remove,,3000
+cmdlinedev,[_ahk]\cmdlinedev,cmdlinedev.exe,cmdlinedev.exe remove,,3000
+titleliner,[_ahk]\titleliner,titleliner.exe,titleliner.exe remove,,3000
+skatstube,[_ahk]\skatstube,skatstube.exe,skatstube.exe remove,inactive,1000
+aottext,[_ahk]\aottext,aottext.exe,aottext.exe remove,inactive,1000
+dottylatest,[_ahk]\dottylatest,dottylatest.exe,,admin inactive,1
+volume,[_ahk]\simpletoolsIntern,volume.exe,volume.exe remove,,500
+translateViaGoogle2,[_ahk]\simpletools,translateViaGoogle2.exe,translateViaGoogle2.exe remove,,500
+AutohotkeyHelp2,[_ahk]\simpletools,AutohotkeyHelp2.exe,AutohotkeyHelp2.exe remove,,500
+pwEnterService,[_ahk]\pwEnterService,pwEnterService.exe,pwEnterServiceRemove.exe,,30000
+clipboardForce,[_ahk]\simpletools,clipboardForce.exe,clipboardForce.exe remove,,30000
+Disk overview,,shell:::{20D04FE0-3AEA-1069-A2D8-08002B30309D},,inactive
+God mode,,shell:::{ED7BA470-8E54-465E-825C-99712043E01C},,inactive
+Autostart folder user,,shell:startup,,inactive
+Dir c:\,c:\,dir,,comspec inactive
+TEST WSL,[_ahk]\aottext,ls -l,,wsl inactive,30000
+TEST WSL ADMIN,[_ahk]\aottext,ls -l,,wsladmin inactive,30000
+TEST Dir,[adminAutostart],dir,,comspec inactive
+simpletools,[_ahk]\simpletools,internalvariables2.exe,, inactive,1
+simpletools,[_ahk]\simpletools,clsidwin10.exe,, inactive,1
