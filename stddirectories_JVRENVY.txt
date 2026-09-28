@@ -11,6 +11,7 @@ translateViaGoogle2,[_ahk]\simpletools,translateViaGoogle2.exe,translateViaGoogl
 AutohotkeyHelp2,[_ahk]\simpletools,AutohotkeyHelp2.exe,AutohotkeyHelp2.exe remove,,500
 pwEnterService,[_ahk]\pwEnterService,pwEnterService.exe,pwEnterServiceRemove.exe,,30000
 clipboardForce,[_ahk]\simpletools,clipboardForce.exe,clipboardForce.exe remove,,30000
+brownout,[_ahk]\simpletools,brownout.exe,brownout.exe remove,,30000
 Disk overview,,shell:::{20D04FE0-3AEA-1069-A2D8-08002B30309D},,inactive
 God mode,,shell:::{ED7BA470-8E54-465E-825C-99712043E01C},,inactive
 Autostart folder user,,shell:startup,,inactive
