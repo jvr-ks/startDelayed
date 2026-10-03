@@ -1,0 +1,4 @@
+﻿Disk overview,,shell:::{20D04FE0-3AEA-1069-A2D8-08002B30309D},, inactive
+God mode,,shell:::{ED7BA470-8E54-465E-825C-99712043E01C},, inactive
+Autostart folder user,,shell:startup,, comspec inactive
+Dir c:\,[adminAutostart],dir,, comspec inactive
